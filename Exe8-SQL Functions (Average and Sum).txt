@@ -1,0 +1,74 @@
+1. While logged in as the 'testuser' in MySQL, using the 'dbTest' database created earlier.
+
+[root@us.com:~]# mysql -u testuser -p -h localhost dbTest
+
+mysql>
+
+-------------------------------------------------------------------------------------------
+
+2. Select all the records in the Vendors Table and sort them alphabetically on the Vendor's Name.
+
+mysql> SELECT * FROM tblVendors ORDER BY vendorName;
+
++----------+-------------+
+
+| vendorID | vendorName  |
+
++----------+-------------+
+
+|        1 | IBM         |
+
+|        6 | LG          |
+
+|        2 | Oracle      |
+
+|        8 | Panasonic   |
+
+|        7 | Sony        |
+
+|        5 | Time Warner |
+
+|        3 | Verizon     |
+
+|        4 | Walmart     |
+
++----------+-------------+
+
+8 rows in set (0.00 sec)
+
+-------------------------------------------------------------------------------------------------
+
+3. Select all records in the tblOrders database and display the SUM of the Vendor ID numbers.
+
+ mysql> SELECT SUM(vendorID) FROM tblVendors;
+
++----------+
+
+| vendorID |
+
++----------+
+
+|        36 |
+
++----------+
+
+1 row in set (0.00 sec)
+
+--------------------------------------------------------------------------------------------------
+
+4. Select all records in the tblOrders database and display the AVERAGE of the Vendor ID numbers.
+
+ mysql> SELECT AVG(vendorID) FROM tblVendors;
+
++----------+
+
+| vendorID |
+
++----------+
+
+|      4.5 |
+
++----------+
+
+1 row in set (0.00 sec)
+---------------------------------------------------------------------------------------------------

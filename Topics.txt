@@ -1,0 +1,21 @@
+Insert Into
+Select From
+Alter Table
+Delete From
+Create Index
+Drop Table
+Truncate Table
+Auto Increment
+Count Function
+Average and sum Functions
+Like Operator
+Create View
+Inner Join
+Left Join
+Right Join
+Full Join
+Unions
+Sorting Records
+Min & Max values
+Ucase & Lcase conversions
+Now()
